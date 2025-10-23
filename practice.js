@@ -191,3 +191,58 @@ var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
 var myData = myArray[2][1];
 console.log(myData)
 ***/
+
+/*** 
+// Printing name and age with template literals
+
+let name = "Anas"
+let age = 18
+console.log(`My name is ${name} and I am ${age} years old.`)
+***/
+
+/*** 
+// Trying typeof null, NaN and undefined
+
+console.log(typeof null)
+console.log(typeof NaN)
+console.log(typeof undefined)
+***/
+
+/*** 
+// Creating a variable and reassigning it
+
+let hobby = 'Drawing'
+hobby = 'Writing'
+console.log(hobby)
+***/
+
+/*** 
+// Creating a grading program
+score = 67
+if (score >= 90) {
+    console.log("A")
+} else if (80 <= score && score > 90) {
+    console.log("B")
+} else if (70 <= score && score > 60) {
+    console.log("C")
+} else if (60 <= score && score > 50) {
+    console.log("D")
+} else if (50 <= score && score > 40) {
+    console.log("E")
+} else {
+    console.log("F")
+}
+***/
+
+/*** 
+// comparing '5' to 5
+console.log('5' == 5)
+console.log('5' === 5)
+***/
+
+/*** 
+//using a ternary to check if a number is even or odd
+let number = 67
+property = (number % 2 == 0) ? "Even" : "Odd" ;
+console.log(property)
+***/
