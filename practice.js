@@ -246,3 +246,45 @@ let number = 67
 property = (number % 2 == 0) ? "Even" : "Odd" ;
 console.log(property)
 ***/
+
+/*** 
+//function to convert celcius to fahrenheit
+
+function celsiusToFahrenheit(celsius) {
+    return (celsius * (9/5)) + 32
+}
+
+celsiusValue = 0
+fahrenheitValue = celsiusToFahrenheit(celsiusValue)
+
+console.log(fahrenheitValue)
+***/
+
+/*** 
+// sum function
+
+function sum(a, b) {
+    return a + b
+}
+
+sum = sum(10, 12)
+console.log(sum)
+***/
+
+/*** 
+// nested function showing variable scope
+
+function outerFunction() {
+    outerVariable = "Hello I am outer variable I can be used inside and outside"
+    console.log(outerVariable)
+    function innerFunction() {
+        innerVariable = "Hello I am inner variable I can only be used in here"
+        console.log(innerVariable)
+        console.log(outerVariable)
+    }
+
+    innerFunction()
+}
+
+outerFunction()
+***/
