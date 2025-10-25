@@ -288,3 +288,43 @@ function outerFunction() {
 
 outerFunction()
 ***/
+
+/***
+// Building a counter closure with increment and getcount
+
+function createCounter() {
+    var count = 0;
+    return {
+        increment() {
+            count += 1
+        },
+        getCount() {
+            console.log(count)
+        }
+    }
+}
+
+const counter = createCounter();
+
+counter.getCount()
+counter.increment()
+counter.getCount()
+***/
+
+/***
+// Logging a var before declaration to observe hoisting
+
+console.log(variable)
+var variable;
+variable = 10;
+console.log(variable)
+***/
+
+/***
+// Trying the same thing with let instead
+
+console.log(variable)
+let variable;
+variable = 10;
+console.log(variable)
+***/
