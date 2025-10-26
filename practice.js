@@ -328,3 +328,65 @@ let variable;
 variable = 10;
 console.log(variable)
 ***/
+
+/*** 
+// using map to double all the numbers in [1, 2, 3, 4]
+
+myArray = [1, 2, 3, 4]
+doubled = myArray.map(x => x * 2);
+
+console.log(doubled)
+***/
+
+/*** 
+// Use filter to keep only even numbers
+
+myArray = [1, 2, 3, 4]
+filtered = myArray.filter((item) => {
+    if (item % 2 == 0) {
+        return item
+    }
+})
+
+console.log(filtered)
+***/
+
+/***
+//clone an object with {...obj} and modify a property
+
+myObject = {name: "Anas", age: 18, height: 168}
+newObject = {...myObject}
+
+newObject.age = 19
+
+console.log(newObject)
+***/
+
+/*** 
+// print numbers 1 - 10
+
+for (var i = 0; i <= 10 ; i++) {
+    console.log(i)
+}
+***/
+
+/*** 
+// Draw triangle pattern with *
+
+star = "*"
+for (let i = 0; i < 3; i++) {
+    console.log(star)
+    star += "*"
+}
+***/
+
+/***
+// Sum all array values manually
+
+let mySum = 0
+myArray = [10, 20, 30, 40, 50]
+for (let i = 0; i < myArray.length; i++)
+    mySum += myArray[i]
+
+console.log(mySum)
+***/
