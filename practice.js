@@ -390,3 +390,28 @@ for (let i = 0; i < myArray.length; i++)
 
 console.log(mySum)
 ***/
+
+/*** 
+// Create an HTML file and change the text with JS
+
+const body = document.body 
+body.append("Hello World")
+***/
+
+/*** 
+// Add abutton that changes a div's color on click
+
+const body = document.body;
+const newDiv = document.createElement("div");
+const newButton = document.createElement("button");
+newDiv.style.height = "100px";
+newDiv.style.width = "100px";
+newDiv.style.backgroundColor = "pink";
+newButton.textContent = "Click Me!"
+body.append(newDiv)
+body.append(newButton)
+
+newButton.onclick = function() {
+    newDiv.style.backgroundColor = "green";
+}
+***/
