@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice To Do List</title>
+        <style>
+            body, ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            li {
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+            }
+            .done-for {
+                text-decoration: line-through;
+            }
+            .checkbox, .item-name, .remove-item {
+                display: inline-block;
+            }
+            .checkbox {
+                cursor: pointer;
+            }
+            .remove-item, .add-item {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="to-do">
+            <li class="item">
+                <button class="checkbox"></button>
+                <p class="item-name">Go to the store</p>
+                <button class="remove-item">Delete</button>
+            </li>
+        </ul>
+        <button class="add-item">+</button>
+        <script src="toDoList.js"></script>
+    </body>
+</html>

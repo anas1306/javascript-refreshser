@@ -415,3 +415,26 @@ newButton.onclick = function() {
     newDiv.style.backgroundColor = "green";
 }
 ***/
+
+/*** 
+// creating a button that changes background color randomly
+
+function getNewColor() {
+    let symbols = '0123456789ABCDEF';
+    let color = '#'
+    for (let i = 0; i < 6; i++) {
+       color += symbols[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+const body = document.querySelector("body")
+const newButton = document.createElement("button")
+newButton.style.cursor = "pointer";
+newButton.textContent = "click me!";
+body.append(newButton)
+
+newButton.addEventListener("click", function(){
+    body.style.backgroundColor = getNewColor() 
+})
+***/
