@@ -438,3 +438,14 @@ newButton.addEventListener("click", function(){
     body.style.backgroundColor = getNewColor() 
 })
 ***/
+
+/*** 
+//creating a promise-based alternative to setTimeout
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(() => resolve(ms), ms))
+}
+
+delay(10000).then(ms => alert(`runs after ${ms/1000} seconds`))
+***/
+
