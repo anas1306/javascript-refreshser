@@ -449,3 +449,50 @@ function delay(ms) {
 delay(10000).then(ms => alert(`runs after ${ms/1000} seconds`))
 ***/
 
+/*** 
+// Learning to use promises
+
+const promise = new Promise((resolve, reject) => {
+    const success = true
+    if (success) {
+        resolve("Data fetched successfully!")
+    } else {
+        reject("Error: Failed to fetch data.")
+    }
+})
+
+promise
+.then(returned => {
+    console.log(returned)
+})
+.catch(err => {
+    console.log(err)
+})
+***/
+
+/***
+// Fetching users from JSONPlaceholder using promises
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(response => response.json())
+.then(jsonData => {
+    console.log(jsonData)
+})
+.catch(err => {
+    console.error('Error fetching data', error)
+})
+***/
+
+/*** 
+//Fetching users from JSONPlaceholder using async/await
+async function fetchData() {
+    try {
+        const originalData = await fetch('https://jsonplaceholder.typicode.com/users');
+        const jsonData = await originalData.json();
+        console.log(jsonData)
+    } catch (error) {
+        console.error('Error fetching data:', error)
+    }
+}
+
+fetchData();
+***/
